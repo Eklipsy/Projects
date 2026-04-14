@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Clone</title>
+    <style>
+        .hi-1 {
+            display: flex;
+            gap: 20px;
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+        .hi0, .hi1, .hi2, .hi3, .hi4, .hi5, .hi6, .hi7, .hi8, .hi9, .hi10, .hi11 {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: none;
+            text-decoration: none;
+        }
+        .hi0:hover, .hi1:hover, .hi2:hover, .hi3:hover, .hi4:hover, .hi5:hover, .hi6:hover, .hi7:hover, .hi8:hover, .hi9:hover, .hi10:hover, .hi11:hover {
+            text-decoration: underline;
+        }
+        .no {
+            border-radius: 999px; 
+            width: 180px; 
+            height: 40px; 
+            margin-top: 20px; 
+            margin-left: 10px; 
+            background-color: blue; 
+            border: none; 
+        }
+        .no a {
+            text-decoration: none;
+            color: white;
+        }
+        .no:hover {
+            background-color: rgb(79, 48, 234);
+            transition: background-color 0.5s ease;            
+        }
+        .kk {
+            margin-top: 30px; 
+            margin-left: 10px; 
+            text-decoration: none; 
+            color: rgb(126, 126, 126);
+        }
+        .kk:hover {
+            color: blue;
+        }
+        .j {
+            text-decoration: none; 
+            color: black;
+            font-weight: bold;
+        }
+        .j:hover {
+            text-decoration: underline;
+        }
+        .hrwells {
+            text-decoration: none; 
+            color: black;
+        }
+        .hrwells:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<nav style="display: flex; margin-top: -15px; gap: 30px; border-bottom: 0.5px solid black;">
+
+        <p>Hi!<a href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&sgfl=gh&ru=https%3A%2F%2Fwww.ebay.com%2F%3Fmsockid%3D0a304440e3dc6e4f359d515ae28b6fe1">Sign in </a>or<a href="https://signup.ebay.com/pa/crte?ru=https%3A%2F%2Fwww.ebay.centcom%2F%3Fmsockid%3D0a304440e3dc6e4f359d515ae28b6fe1"> register</a></p>
+        
+        <p><a style="text-decoration: none; color: black;" href="https://www.ebay.com/globaldeals">Daily Deals</a></p>
+        
+        <a style="text-decoration: none; color: black;" href="index.html"><p>Brand Outlet</p></a>
+        
+        <a style="text-decoration: none; color: black;" href="https://www.ebay.com/giftcards"><p>Gift Cards</p></a>
+        
+        <a style="text-decoration: none; color: black;" href="https://www.ebay.com/help/home"><p>Help & Contact</p></a>
+        
+        <p style="margin-left: 200px;">Ship to</p> 
+        <a style="text-decoration: none; color: black;" href="https://www.ebay.com/help/home"><p>Sell</p></a>
+
+        <p><a href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2Fmys%2Fhome%3Fsource%3DGBH&sgfl=sm&smuid=4b558235910b451dad98dab4dc7abd04"><select style="border: none;"><option>Watchlist</option></select></a></p>
+        
+        <p><a href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2Fmys%2Fhome%3Fsource%3DGBH&sgfl=sm&smuid=4b558235910b451dad98dab4dc7abd04"><select style="border: none;"><option>My eBay</option></select></a></p>
+        
+        <p><a style="text-decoration: none;" href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2Fmys%2Fhome%3Fsource%3DGBH&sgfl=sm&smuid=4b558235910b451dad98dab4dc7abd04">🔔</a></p>
+        
+        <a style="text-decoration: none;" href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2Fmys%2Fhome%3Fsource%3DGBH&sgfl=sm&smuid=4b558235910b451dad98dab4dc7abd04"><p>🛒</p></a>
+</nav>
+
+    <div style="background-color: white; display: flex; margin-left: 10px; border-bottom: 1px solid black;">
+        
+        <a href='file:///C:/Users/ezep9/Desktop/FINALPROJECT/templates/krangraz.html' target='_blank'><img src='https://i.postimg.cc/QHpQmLmX/FE4-CC63-B-9-E83-4503-941-B-648-B7-AAAF4-B3.png' border='0' alt='FE4-CC63-B-9-E83-4503-941-B-648-B7-AAAF4-B3'/></a> 
+        <select style="border: none;"><option><p>Shop by category</p></option></select> 
+
+        <input type="search" placeholder=" Search for anything" style="width: 600px; height: 40px; margin-left: 10px; margin-top: 20px; border-radius: 999px; border: 2px solid black;"> 
+
+        <button class="no"><a href="https://www.ebay.com/n/all-categories?_nkw=&_sacat=0&_from=R40&_trksid=m570.l1313">Search</a></button>
+        <a class="kk" href="https://www.ebay.com/sch/ebayadvsearch">Advanced</a>
+   
+    </div>
+
+    <div class="hi-1">
+        <a href="https://www.ebay.com/ebaylive" class="hi0">eBay live</a>
+        <a class="hi1" href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2Fmye%2Fmyebay%2Fsaved&sgfl=sm&smuid=e9053d00c9fb42f78c8b733bad9b09c7">Search</a>
+        <a class="hi2" href="https://www.ebay.com/b/Electronics/bn_7000259124">Electronics</a>
+        <a class="hi3" href="https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479">Motors</a>
+        <a class="hi4" href="https://www.ebay.com/b/Fashion/bn_7000259856">Fashion</a>
+        <a class="hi5" href="https://www.ebay.com/b/Collectibles-Art/bn_7000259855">Collectibles and Art</a>
+        <a class="hi6" href="https://www.ebay.com/b/Sporting-Goods/888/bn_1865031">Sports</a>
+        <a class="hi7" href="https://www.ebay.com/b/Health-Beauty/26395/bn_1865479">Health & Beauty</a>
+        <a class="hi8" href="https://www.ebay.com/b/Business-Industrial/12576/bn_1853744">Industrial Equipment</a>
+        <a class="hi9" href="https://www.ebay.com/b/Home-Garden/11700/bn_1853126">Home & Garden</a>
+        <a class="hi10" href="https://www.ebay.com/globaldeals">Deals</a>
+        <a class="hi11" href="https://export.ebay.com/en/">Sell</a>
+    </div>
+
+    <a href='https://www.ebay.com/b/In-Car-Technology-GPS-Security-Devices/38635/bn_562662?_trkparms=pageci%3A88f2b23b-52aa-11f0-b8fb-d65eee00393d%7Cparentrq%3Aad1157681970ab11a04e23fcffff716c%7Ciid%3A2%7Cvlpname%3Avlp_homepage' target='_blank'><img style="margin-top: 35px; margin-left: -8px; height: 400px;" src='image3.png' border='0' alt='ED68-F575-C5-CB-4-A57-BDF2-E093-CB5-A5950'/></a>
+
+    <h2 style="margin-left: 20px;">Explore Popular Categories</h2>
+
+    <div style="display: flex; gap: 20px; margin-left: 5px; margin-bottom: 20px;">
+        <div>
+            <a href='https://postimg.cc/hhqJRyb3' target='_blank'><img style="height: 150px;" src='https://i.postimg.cc/hhqJRyb3/BF306796-3-AE5-4-A32-AD8-A-9-CAE662-B49-E7.png' border='0' alt='BF306796-3-AE5-4-A32-AD8-A-9-CAE662-B49-E7'/></a>
+            <p style="margin-left: 60px;"><a class="j" href="https://www.ebay.com/b/Luxury-on-eBay/bn_7109710914?_trkparms=parentrq%3Aad09053b1970ab1ed7c6d7f5ffff7224%7Cpageci%3A43e929de-52a9-11f0-9b0a-aadb0db2734f%7Cc%3A1%7Ciid%3A1%7Cli%3A8874">Luxury</a></p>
+        </div>
+        <div>
+            <a href='https://postimg.cc/Mvh2k1wq' target='_blank'>
+                <img style="height: 150px;" src='https://i.postimg.cc/Mvh2k1wq/00-C9-C4-A8-7-EFF-45-A8-8-F42-3930-CF1-C90-A7.png' border='0' alt='00-C9-C4-A8-7-EFF-45-A8-8-F42-3930-CF1-C90-A7'/>
+            </a>   
+            <p style="margin-left: 60px;"><a class="j" href="https://www.ebay.com/b/Collectible-Sneakers/bn_7000259435?_trkparms=parentrq%3Aad120d591970ab115647d897ffff7384%7Cpageci%3Aa4b66531-52aa-11f0-8573-02355cf3a345%7Cc%3A2%7Ciid%3A1%7Cli%3A8874">Sneakers</a></p>
+        </div>
+        <div>
+            <a href='https://postimg.cc/Q9pktG9f' target='_blank'>
+                <img style="height: 150px;" src='https://i.postimg.cc/Q9pktG9f/493-BF440-07-C6-47-D7-91-C4-FC1-CB8-AAAC99.png' border='0' alt='493-BF440-07-C6-47-D7-91-C4-FC1-CB8-AAAC99'/>
+            </a>
+            <p style="margin-left: 65px;"><a class="j" href="https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479?_trkparms=parentrq%3Aad163ad81970a6ae5c4511d3ffff72be%7Cpageci%3A47e858f5-52ab-11f0-971d-d66daca2454a%7Cc%3A3%7Ciid%3A1%7Cli%3A8874">P&A</a></p>
+        </div>
+        <div>
+            <a href='https://postimg.cc/7b1rv562' target='_blank'>
+                <img style="height: 150px;" src='https://i.postimg.cc/7b1rv562/9-CCBAFEE-7-FE4-4-A2-C-AE85-DF43-EECE7648.png' border='0' alt='9-CCBAFEE-7-FE4-4-A2-C-AE85-DF43-EECE7648'/>
+            </a>
+            <p style="margin-left: 45px;"><a class="j" href="https://br.ebay.com/b/eBay-Refurbished/bn_7040708936?_trkparms=parentrq%3Aad163ad81970a6ae5c4511d3ffff72be%7Cpageci%3A47e858f5-52ab-11f0-971d-d66daca2454a%7Cc%3A4%7Ciid%3A1%7Cli%3A8874">Refurbished</a></p>
+        </div>
+        <div>
+            <a href='https://postimg.cc/JDZ0CRDz' target='_blank'>
+                <img style="height: 150px;" src='https://i.postimg.cc/JDZ0CRDz/0027-A45-C-221-F-477-B-8960-0550-EF80204-E.png' border='0' alt='0027-A45-C-221-F-477-B-8960-0550-EF80204-E'/>
+            </a>
+            <p style="margin-left: 35px;"><a class="j" href="https://www.ebay.com/e/row/ccgrow?_trkparms=parentrq%3Aad163ad81970a6ae5c4511d3ffff72be%7Cpageci%3A47e858f5-52ab-11f0-971d-d66daca2454a%7Cc%3A5%7Ciid%3A1%7Cli%3A8874">Trading cards</a></p>
+        </div>
+        <div>
+            <a href='https://postimg.cc/G8fwc5Ng' target='_blank'>
+                <img style="height: 150px;" src='https://i.postimg.cc/G8fwc5Ng/506-D0-BF4-A383-4789-A21-D-6-E77-D096-FA4-C.png' border='0' alt='506-D0-BF4-A383-4789-A21-D-6-E77-D096-FA4-C'/>
+            </a>
+            <p style="margin-left: 40px;"><a class="j" href="https://www.ebay.com/e/row/pre-loved-row?_trkparms=parentrq%3Aad171d8a1970a5825a49b18cffff77a8%7Cpageci%3A6a7e69ee-52ab-11f0-b1f7-6abbf4ccb22f%7Cc%3A6%7Ciid%3A1%7Cli%3A8874">Pre-loved Luxury</a></p>
+        </div>
+        <div>
+            <a href='https://postimg.cc/QBbvPk1L' target='_blank'>
+                <img style="height: 150px;" src='https://i.postimg.cc/QBbvPk1L/FC64-EDF4-592-F-486-E-9-D3-D-41-B484-F14837.png' border='0' alt='FC64-EDF4-592-F-486-E-9-D3-D-41-B484-F14837'/>
+            </a>
+            <p style="margin-left: 60px;"><a class="j" href="https://www.ebay.com/b/Toys-Hobbies/220/bn_1865497?_trkparms=parentrq%3Aad171d8a1970a5825a49b18cffff77a8%7Cpageci%3A6a7e69ee-52ab-11f0-b1f7-6abbf4ccb22f%7Cc%3A7%7Ciid%3A1%7Cli%3A8874">Toys</a></p>
+        </div>
+    </div>
+
+    <div style="display: flex;"> 
+        <div style="margin-left: 15px; background-color: black; width: 200px; padding-bottom: 70px; padding-top: 5px; border-radius: 25px; padding-right: 30px;">
+            <h2 style="margin-left: 15px; color: white; margin-right: 250px;">Today's Deals</h2>
+            <p style="margin-left: 15px; margin-top: -15px; color: white;">All With Free Shipping</p>
+            <button style="margin-left: 30px; color: black; background-color: white; border-radius: 30px; padding: 10px 10px; border: none;">
+            <a style="text-decoration: none; color: black;" href="https://www.ebay.com/globaldeals?_trkparms=parentrq%3A5a6ab42c1970a2d83f8b4c21ffff4ae4%7Cpageci%3Afbae7987-460d-11f0-9808-9e7418bae933%7Ciid%3A1%7Cvlpname%3Avlp_homepage">Shop Now</a>
+            </button>
+        </div>
+
+        <div style="gap: 10px;"></div>
+
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href='https://www.ebay.com/itm/226727296738?_skw=Men%27s+Collectible+Sneakers&epid=4064563795&itmmeta=01JYPJC7PJVMHCHCETCJ1C7SBR&hash=item34c9fffee2:g:3S8AAOSwC4loERVo&itmprp=enc%3AAQAKAAABAMHg7L1Zz0LA5DYYmRTS30lrUi9x7w0NdLtB0JWHDS1u81JxuYVhvWF92gDFQn%2BirQ%2BRfFJ6p69rPjxQczlMECUNaztii%2BhlHVl%2Fb2zZ%2BsDsAAtgJgRFEpxfZndH9p83zOhWoSZWa%2B03g3jfDIrMSflGw51W3zDu%2BJVzqvuItpXPfUq5J6D2iOmrCygF--V%2BzNNUeowNQRIzj5awJy31IIqGXx3WYls6Uq6mUuD3xur6JhkeQFZlYSNXB%2F0%2F4IQoa43aEhjs1XuZAND88IGZpdOqbdyfyfMaXrKhYee1BR%2BKY--7FLVx2Pju41UOOo5smYht%2F2XO0ymW7FMOSCR0%2FvY%3D%7Ctkp%3ABFBMtvuw0vVl&var=525895469794'><img style="height: 225px;" src='https://i.postimg.cc/GTTsRrds/image.png' border='0' alt='image'/>Super Ultra Mega Brand New Branded One-Shoe-Lost Sneaker <br> <b>$210.66</b></a>
+
+        <a style="text-decoration: none; color: black;"  href='https://www.ebay.com/itm/195662784122?_skw=phones&epid=28043687656&itmmeta=01JYPJE7C23WNHY5YEPTK66N3J&hash=item2d8e69267a:g:8IcAAOSwf4FkFBTZ&itmprp=enc%3AAQAKAAAA4FkggFvd1GGDu0w3yXCmi1fpsB2hNtNNWQhiSPz4G3gD%2B6NoxUeInj%2Ftg36G9yQpSBsl7CF8LyaNPpRb2ioW%2FZuF9ZlT%2FbNao4HE%2FCMOj3KUZ23D8FU7bp0X%2FVqh50YfJ2MqWDqQOOBlNdTfZ7giml2XUagEcbZ%2BLG7e3532NIbJ43rkJCIb2cfzlSZOUVFGpSdU1qEGfKP85p79g4e9v2GYuo0WN%2FvGYuDMKdoXFMdwvmxtlVVVLumsqEEZLoRebMlwhDt08dfggjHlUg3hzq0xg1Rx7GFxomodsVT3wX2l%7Ctkp%3ABFBMzPa40vVl' target='_blank'><img style="height: 225px; margin-top: -5px;" src='https://i.postimg.cc/rz8ykghh/image.png' border='0' alt='image'/>WD Ultrastar DC HC550 18TB SATA 6G 3.5" 7200RPM Enterprise HDD - <br> <b>$905.66</b></a>
+
+        <a style="text-decoration: none; color: black;" href='https://www.ebay.com/itm/176604439836?_skw=electric+screen&itmmeta=01JYPJG9FJ93M4T155VTQ2V824&hash=item291e71e51c:g:MugAAOSw8wdm-yzr&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1d%2BEAq8KEb4y5DZjxosFkPlRhTubBoY8Xb4uhoIytbokI3SvsV6gKG%2B1sncMIcripC26Ptie28ikB4TZQgOvLdgD6sPR51iIf2ER0RtlcXN3zFN1401CQcr%2FmjzY3RjCmYqKROg8hWCavg%2BGjxCCah4%2BVBYGe6GEj8mvgyqp%2FrO3Hp33tXlJK968f%2FNodFY5T0TLI%2Fq0y54m0lTt38LK52ZwBAp3nT8XsOAET5F7VUeGc3puPxEB78xMLE3wXfVRkpAu%2BgtunNw1oK4i5Xp83dPgatcmx9zseDjNfbkHsGTFA%3D%3D%7Ctkp%3ABFBMmJjB0vVl' target='_blank'><img style="height: 225px; margin-left: 3px; margin-right: 3px;" src='https://i.postimg.cc/BLNPfBzR/image.png' border='0' alt='image'/>Ray-Ban Men's 64mm Aviator RB3267 - Multi Color Option <br> <b>$578.15</b></a>
+
+        <a style="text-decoration: none; color: black;" href='https://www.ebay.com/itm/146663031720?_skw=golf+black+putter&itmmeta=01JYPJJGZG8SQAVNAQ3Z5XV9Y3&hash=item2225cc43a8:g:qV0AAOSwUrNoVb6q&itmprp=enc%3AAQAKAAAA0FkggFvd1GGDu0w3yXCmi1fpcmMcv69yZsRt8pf3Ff0%2BaxH0oPR1CNMnn0%2FFgB186AGt4rjHLEY%2BPCfP5VsBj6ubd1U7CXbThs3idt%2Bk%2F%2Bhl19sipD0a3NjeRRGx0tcQ4n96Ozn3Fa0N4U3dxa3MTwLUBcB52e4tHJizI%2FW%2F9iI%2FhEljcn54zNB5KC2qzD9PEI%2BYgxLyS1xSmyiiCz1%2BgminOYz%2B5MwCLnQ1aYCzOLJ9SRE4FsD5R6bGWxxhxgYcZ35esI3x77SfJeyPQs%2FZa4I%3D%7Ctkp%3ABk9SR_aPytL1ZQ' target='_blank'><img style="height: 225px;" src='https://i.postimg.cc/hXkMwKFN/image.png' border='0' alt='image'/>Dyson HP4A Pure Hot+Cool™ purifier fan heater | White/Silver | Refurbished <br> <b>$499.99</b></a>
+
+        <a style="text-decoration: none; color: black;" href='https://www.ebay.com/itm/187088785868?_skw=rtx+4090&itmmeta=01JYPJM5EJQX9XKDVDQTH6X7W9&hash=item2b8f5c51cc:g:oWAAAeSwrEVn2bZN&itmprp=enc%3AAQAKAAAAwFkggFvd1GGDu0w3yXCmi1e1X3Nd%2BjTDa3fji4rERHtK8euCxOMfvDN%2BtbgFUBGBQtdzPt62iiKHF7iy3uBZinzNJXTnojZiBb12445CFFRzJ4wKWvAsfWAqhv5bNfWcLsZMVQi%2FT8R7nObDjRFVDSGstCinB%2BuzOK0KzxJwun1ZkVMoxp4ADqGjQaT1QADGmXcnUIJliqTlRuFwKQEoZAtbjZczL3MMJ17VZ2GcGsBVs2hfqP9MetAspcUlyOFl3A%3D%3D%7Ctkp%3ABk9SR7zX0NL1ZQ' target='_blank'><img style="height: 225px;" src='https://i.postimg.cc/crwm1nND/image.png' border='0' alt='image'/>Westinghouse Certified Refurbished 4500 W Portable Dual Fuel Inverter<br> <b>$623.75</b></a>
+</div>
+    <a style=" padding-bottom: 40px;" href='https://pages.ebay.com/returns/?_trkparms=pageci%3A95d7eacc-460d-11f0-ae50-66b5c2f5aef0%7Cparentrq%3A5a6818761970a2d832692bf9ffff44d6%7Ciid%3A2%7Cvlpname%3Avlp_homepage%7Cii%3Aeb706f26-44c6-4eb6-95e9-a63e3b2c20e0' target='_blank'><img style="margin-left: -10px; margin-top: 30px;" src='https://i.postimg.cc/y62cf5Lt/image.png' border='0' alt='image'/></a>
+
+<footer style="padding-left: 25px; margin-bottom: -10px; padding-bottom: 35px;  margin-top: 45px; padding-top: 40px; margin-left: -7px; width: 1250px; border-top: 1px solid black; background-color: rgb(246, 246, 246);">
+
+    <div style="display: flex; gap: 20px; margin-left: 20px;">
+            <a class="hrwells" href="https://www.ebayinc.com/"><p>About eBay</p></a>
+            <a class="hrwells" href="#"><p>Announcements</p></a>
+            <a class="hrwells" href="#"><p>Community</p></a>
+            <a class="hrwells" href="#"><p>Security Center</p></a>
+            <a class="hrwells" href="#"><p>Seller Center</p></a>
+            <a class="hrwells" href="#"><p>Policies</p></a>
+            <a class="hrwells" href="#"><p>Affiliates</p></a>
+            <a class="hrwells" href="#"><p>Help & Contact</p></a>
+            <a class="hrwells" href="#"><p>Site Map</p></a>
+    </div>
+    <div style="margin-left: 20px; margin-top: 10px;">
+            <span style="color: gray;">Copyright © 1995-2023 eBay Inc. All Rights Reserved. 
+                <a href="#">Accessibility</a>, <a href="#">User Agreement</a>, 
+                <a href="#">Privacy</a>, <a href="#">Consumer Health Data</a>, 
+                <a href="#">Payments Terms  Use</a>, <a href="#">Cookies</a>, 
+                <a href="#">CA Privacy Notice</a>, 
+                <a href="https://www.ebay.com/adchoice/ccpa">Your <br>Privacy Choices</a>
+                <a href="https://www.ebay.com/adchoice/ccpa"><img src="image.png" alt="image" style="height: 15px; margin-bottom: -2px;"></a> and 
+                <a href="https://www.ebay.com/adchoice">AdChoice</a> 
+                <a href="https://www.ebay.com/adchoice"><img src="image2.png" alt="image2" style="height: 15px; margin-bottom: -2px;"></a></span>
+    </div>
+</footer>
+</body>
+</html>

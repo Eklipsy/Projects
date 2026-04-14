@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Outlet | eBay</title>
+    <style>
+        body {
+            font-family: "Market Sans", Helvetica, sans-serif;
+        }
+          ::placeholder {
+            color: gray;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        nav{
+            display: flex;
+            height: 8px;
+            place-items: center;
+            padding: 4px;
+
+        }
+        p{
+            font-size: smaller;
+            
+        }
+        hr{
+            border: 0.0001px solid #cecece;
+        }
+        .hi{
+            margin-left: 30px;
+        }
+        .i{
+            margin-left: 10px;
+        }
+        .bread{
+            text-decoration: none;
+            color: black;
+            font-size: 12.5px;
+        }
+        button{
+            border: none;
+            background-color: white;
+        }
+        .k{
+            margin-left: 15px;
+        }
+        input{
+            padding-left: 10px;
+        }
+        .yoo{
+       background-color: #3665f3; 
+       transition: background-color 0.3s ease;
+        }
+        .yoo:hover{
+            background-color: rgb(79, 48, 234);
+        }
+        .jj{
+            color: gray;
+            font-size: 16px;
+        }
+        .apple{
+            margin-top: 22px; 
+            font-size: 12px;
+            margin-left: 8px; 
+            margin-right: 10px;
+            text-decoration: none; 
+            color: grey;
+        }
+        .apple:hover{
+            color: #3665f3;
+        }
+        .margi {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .mo{
+            color: rgb(134, 134, 134);
+        }
+        .chingalangalong{
+            margin-top: 45px;
+            font-size: 18px;
+            margin-bottom: 1055px;
+        }
+        .gege{
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+            border-bottom: rgb(207, 207, 207) 1px solid;
+        }
+        .gege:hover {
+            text-decoration: underline;
+        }
+
+        .toggle-buttons {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.btn {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  transition: background-ease 0.3s;
+}
+.btn.active {
+  background: #2c2c2c;
+  color: white;
+  border-radius: 999px;
+}
+.btn:not(:last-child) {
+  border-right: 1px solid transparent;
+}
+.chingalangalong {
+    margin-top: 1px;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    width: 200px;
+}
+.sort-container {
+  display: flex;
+  gap: 10px;
+ margin-left: 420px;
+}
+
+.sort-select,
+.layout-select {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.sort-select:hover,
+.layout-select:hover {
+  background-color: #e5e5e5;
+}.filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  padding-right: 160px;
+  border-bottom: 1px solid #000000;
+}
+
+.filter-select {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  font-size: 13.5px;
+  background-color: #f5f5f5ff;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 22px;
+}
+.filter-select:hover {
+  background-color: #e5e5e5;
+}
+.jjmk{
+    text-decoration: none;
+    color: black;
+}
+        .jjmk:hover{
+            text-decoration: underline;
+        }
+        .kmk{
+             color: gray;
+            font-size: 15px;
+            margin-left: 15px;
+        }
+        .eterna{
+        margin-left: 16px;
+        font-weight: 700;
+        font-size: x-large;
+        }
+        .jimjam{
+            margin-left: 16px;
+            font-size: 14px;
+            color: gray;
+        }
+        .zii{
+            margin-bottom: -5px;
+            margin-top: 4px;
+             color: gray;
+            font-size: 15px;
+            margin-left: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav>
+  <p class="i">Hi! <a href="#">Sign in</a> or <a href="#">register</a></p>
+  <p class="hi"><a href="#" class="bread">Daily Deals</a></p> 
+  <p class="hi"><a href="#" class="bread">Brand Outlet</a></p> 
+  <p class="hi"><a href="#" class="bread">Gift Cards</a></p> 
+  <p class="hi"><a href="#" class="bread">Help & Contact</a></p> 
+  <button style="margin-left: 300px;">Ship to</button>
+  <p class="k"><a href="#" class="bread">Sell</a></p> 
+  <select name="category" style="margin-left: 30px; border: none;">
+    <option>Watchlist</option>
+  </select>
+    <select name="category" style="margin-left: 30px; border: none;">
+        <option>My eBay</option>
+    </select>
+    <button style="margin-left: 20px; margin-right: 20px; font-size: 17px;">
+        🔔
+    </button>
+    <button style="font-size: 17px;">
+        🛒
+    </button>
+</nav><hr>
+
+    <div class="bodies_head" style="display: flex;">
+       <a href="krangraz.html" target="_blank" rel="noopener" style="margin-left: 10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo" width="150">
+</a> 
+    <select class="jj" style="border: none; margin-left: 5px; margin-right: 5px;">
+            <option >Shop by category</option>
+    </select>
+
+    <div style="position: relative; width: 400px; margin-top: 10px; ">
+      <span style="
+        position: absolute;
+        top: 35%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: gray;
+        font-size: 16px;
+        pointer-events: none;
+      ">🔍</span>
+    
+      <input 
+        type="text" 
+        placeholder="Search for anything"
+        style="
+          width: 635px;
+          padding: 10px 10px 10px 35px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 25px;
+          margin-left: 10px;
+          border: black 2px solid;
+        ">
+    
+        <span style="
+        position: absolute;
+        top: 35%;
+        left: 525px;
+        transform: translateY(-40%);
+        font-size: 16px;
+    
+        padding-left: 25px;
+        border: none;
+      "><select style="border: none; border-left: 1px solid #cecece; padding: 10px; color: #737373;" class="kk"><option>All Categories</option></select></span>
+    
+    </div>
+    
+    <button class="yoo" style="
+      height: 42px; 
+      color: white; 
+      padding: 0 20px; 
+      margin-left: 5px; 
+      font-weight: bold; 
+      border: none; 
+      border-radius: 4px; 
+      cursor: pointer;
+      margin-left: 310px;
+      border-radius: 25px;
+      width: 175px;
+      margin-top: 10px;
+    ">
+      Search
+    </button>
+    
+<a href="#" class="apple">Advanced</a>
+
+    </div>
+
+<div class="container2" style="margin-top: 20px; margin-left: 10px;">
+        <p><span class="mo">eBay</span><span class="margi">></span><span>Brand Outlet</span></p>
+        <h1 style="margin-top: 30px; font-size: 40px;">Brand Outlet</h1>
+
+
+<div class="condainyy" style="display: flex; ">
+
+ <div class="chingalangalong">
+        <p style="font-weight: bold;">Shop by Category</p>
+        <a href="#" class="gege"><p>Clothing, Shoes &<br> Accessories</p></a>
+    </div>
+
+<div class="liigan">
+
+<div class="top1">
+
+    <div class="buttons" style="display: flex;">
+
+<div class="toggle-buttons " style="margin-left: 20px;">
+  <button class="btn active">All Listings</button>
+  <button class="btn">Auction</button>
+  <button class="btn">Buy It Now</button>
+  
+</div>
+
+<div class="sort-container">
+  <select class="sort-select">
+    <option selected>Sort: Best Match</option>
+    <option>Price + Shipping: lowest first</option>
+    <option>Price + Shipping: highest first</option>
+    <option>Newest first</option>
+  </select>
+
+  <select class="layout-select">
+    <option selected>☰</option>
+    <option>Grid</option>
+    <option>List</option>
+  </select>
+</div>
+
+    </div>
+
+    <p style="margin-left: 22px; font-size: 17px; margin-top: 10px; border-bottom: 1px solid rgb(0, 0, 0); padding-bottom: 10px;">4 Results</p>
+
+</div>
+
+<div class="top2" style="display: flex; margin-left: 20px; font-family: Market Sans, Helvetica, sans-serif;">
+   <div class="filter-row">
+    <select class="filter-select">
+      <option hidden>Color</option>
+      <option>White</option>
+      <option>Black</option>
+      <option>Gray</option>
+      <option>Beige</option>
+      <option>Blue</option>
+      <option>MultiColor</option>
+      <option>Yellow</option>
+      <option>Brown</option>
+      <option>Gold</option>
+      <option>Orange</option>
+    </select>
+
+    <select class="filter-select">
+      <option hidden>Number of Outlets</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>6</option>
+      <option>10 or More</option>
+      <option>51 or More</option>
+      <option>Not Specified</option>
+    </select>
+
+    <select class="filter-select">
+      <option hidden>Brand</option>
+      <option>Leviton</option>
+      <option>Eaton</option>
+      <option>GE</option>
+      <option>Boss</option>
+      <option>Wirez</option>
+      <option>Cooper</option>
+      <option>Hubel</option>
+      <option>Tots</option>
+      <option>Prime</option>
+      <option>Watts</option>
+      <option>Legend</option>
+      <option>Enerl</option>
+      <option>Maxx</option>
+      <option>Gear </option>
+      <option>South'</option>
+      <option>Tripp</option>
+      <option>Wiremold</option>
+      <option>Master</option>
+      <option>Belkin</option>
+      <option>Cyber</option>
+      <option>Non Branded</option>
+    </select>
+
+    <select class="filter-select">
+      <option hidden >Mounting Style</option>
+      <option>Wall</option>
+      <option>Floor</option>
+      <option>Table</option>
+      <option>Ceiling</option>
+      <option>Surface</option>
+      <option>Plug-In</option>
+      <option>Screw</option>
+      <option>Panel</option>
+      <option>Fixed</option>
+      <option>Bench</option>
+      <option>Flush</option>
+      <option>Portable</option>
+      <option>Flange</option>
+      <option>Unit</option>
+      <option>In-Wall</option>
+      <option>DIN Rail</option>
+      <option>Snap-In</option>
+      <option>Cable</option>
+      <option >I-Line</option>
+      <option>In-Line</option>
+      <option>Plastic</option>
+    </select>
+
+    <select class="filter-select">
+      <option hidden >Features</option>
+      <option>GFCI</option>
+      <option>Safety</option>
+      <option>Tech</option>
+      <option>USB</option>
+      <option>Smart</option>
+      <option>Surge</option>
+      <option> Power</option>
+      <option> Strip</option>
+      <option> Bank</option>
+      <option> Supply</option>
+      <option> Cable</option>
+      <option> Cord</option>
+      <option> Hub</option>
+      <option> Module</option>
+      <option> Pack</option>
+      <option> Switch</option>
+      <option>Protector</option>
+    </select>
+
+    <select class="filter-select">
+      <option hidden >Condition</option>
+      <option>New</option>
+      <option>Used</option>
+      <option>General</option>
+    </select>
+
+    <select class="filter-select">
+      <option hidden >Price</option>
+      <option>Under £13</option>
+      <option>£13 - £65</option>
+      <option>£65 +</option>
+    </select>
+
+</div>
+
+</div>
+
+<div class="boday" style="margin-left: 20px; margin-top: 10px;">
+
+  <div class="item1" style="display: flex;">
+
+    <div class="1mg"><a href='https://postimg.cc/XXD1D2BS' target='_blank'><img style="height: 225px;" src='https://i.postimg.cc/XXD1D2BS/Screenshot-2025-05-08-183504.png' border='0' alt='Screenshot-2025-05-08-183504'/></a></div>
+
+   <div class="text"><h3 style="font-weight: lighter; font-size: 16.5px; margin-left: 15px; margin-top: 1px; margin-bottom: 1px;"><a href="#" class="jjmk">40PCS LEVITON GFTR1-4W GFI GFCI 15A TAMPER RESISTANT OUTLET WHITE BRAND NEW</a></h3>
+   <span class="kmk">Brand New · Leviton</span><br>
+<a href='https://postimages.org/' target='_blank'><img style="height: 16px; margin-left: 11px; margin-top: 5px; margin-bottom: 10px;" src='https://i.postimg.cc/9zXfLjFp/6-A7-A6085-45-FA-40-BA-B993-D00-B24-ED63-AE.png' border='0' alt='6-A7-A6085-45-FA-40-BA-B993-D00-B24-ED63-AE'/></a><br>
+<span class="eterna">EUR 409.24</span><br>
+<p style="margin-bottom: -5px;"></p>
+<span class="jimjam">Free Shipping</span>
+<p style="margin-left: 16px; color: rgb(222, 29, 29); margin-top: 7px;">1,064 sold</p>
+<p style="margin-top: 55px; margin-left: 15px; color: rgb(88, 87, 87);">Sponsored</p>
+  </div>   
+  
+</div>    
+
+<div class="item2" style="display: flex; margin-left: -5px; margin-top: 10px;">
+
+  <div class="1mg"><a href='https://postimg.cc/WhDYg3Gj' target='_blank'><img style="height: 230px; width: 238px;" src='https://i.postimg.cc/WhDYg3Gj/89-BD2359-1266-4-E28-9132-8-F41-FFCDA0-FD.png' border='0' alt='89-BD2359-1266-4-E28-9132-8-F41-FFCDA0-FD'/></a></div>
+
+ <div style="margin-top: 5px;"><h3 style="font-weight: lighter; font-size: 16.5px; margin-left: 15px; margin-top: 1px; margin-bottom: 1px;"><a href="#" class="jjmk">(New Listing) COACH CT721 Leather Soft Tabby 26 Shoulder Bag Crossbody Brown</a></h3>
+ <p class="zii">New (Other) · Coach</p><br>
+<span class="eterna">EUR 409.24</span><br>
+<p style="margin-bottom: -5px;"></p>
+<span class="jimjam">Free Shipping</span>
+<p style="margin-left: 16px; color: rgb(222, 29, 29); margin-top: 7px;">3 watching</p>
+</div>   
+
+</div> 
+
+<div class="item3" style="display: flex; margin-left: -5px; margin-top: 10px;">
+
+  <div class="1mg"><a href='https://postimg.cc/ppvYwRcH' target='_blank'><img style="height: 240px;" src='https://i.postimg.cc/ppvYwRcH/D66-C4-B72-75-B4-4-DBD-B19-D-9-ACEF4-E486-E0.png' border='0' alt='D66-C4-B72-75-B4-4-DBD-B19-D-9-ACEF4-E486-E0'/></a></div>
+
+ <div class="text"><h3 style="font-weight: lighter; font-size: 16.5px; margin-left: 15px; margin-top: 1px; margin-bottom: 1px;"><a href="#" class="jjmk">Portable Laptop Charger with AC Outlet 98Wh/100W Power Bank 27000mAh Intl Travel</a></h3>
+ <p class="zii">Open Box</p><br>
+<span class="eterna">EUR 57.83</span><br>
+<p style="margin-bottom: -5px;"></p>
+<span class="jimjam">Free Shipping</span>
+<p style="margin-left: 16px; color: rgb(222, 29, 29); margin-top: 7px;">Only 1 left!</p>
+</div>   
+
+</div> 
+
+<div class="item4" style="display: flex; margin-left: -5px; margin-top: 10px;">
+
+  <div class="1mg"><a href='https://postimg.cc/87NZhXyB' target='_blank'><img style="height: 243px;" src='https://i.postimg.cc/87NZhXyB/79-FBC84-E-112-A-45-D0-BB46-451-ACFB36732.png' border='0' alt='79-FBC84-E-112-A-45-D0-BB46-451-ACFB36732'/></a></div>
+
+ <div style="margin-top: 5px;"><h3 style="font-weight: lighter; font-size: 16.5px; margin-left: 15px; margin-top: 1px; margin-bottom: 1px;"><a href="#" class="jjmk">Utilitech Indoor 3-Piece Wireless Outlets with Remote Control</a></h3>
+ <p style=" margin-bottom: 0px; margin-top: 4px; color: gray; font-size: 15px; margin-left: 15px;">Brand New · Utilitech</p>
+ <a href='https://postimages.org/' target='_blank'><img style="height: 16px; margin-left: 11px; margin-top: 0px; margin-top: 5px; margin-bottom: 10px;" src='https://i.postimg.cc/9zXfLjFp/6-A7-A6085-45-FA-40-BA-B993-D00-B24-ED63-AE.png' border='0' alt='6-A7-A6085-45-FA-40-BA-B993-D00-B24-ED63-AE'/></a><br>
+<span class="eterna">EUR 17.78</span><br>
+<p style="margin-bottom: -5px;"></p>
+<span class="jimjam">Free Shipping</span>
+<p style="margin-left: 16px; color: rgb(222, 29, 29); margin-top: 7px;">500 lines of code, 3 weeks, all for nothing</p>
+</div>   
+
+</div>
+
+</div>
+  
+</div>
+
+</body>
+</html>
